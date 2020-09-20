@@ -1,8 +1,40 @@
-import java.util.*;
-      public class Q21{
-     public static void main(string args[]){
-       Scanner sc =  new Scanner(System.in);
-   
-  int arr[] = new int[10];
-  int sum=0;
-     for(i=0; i<arr.length; i++)
+import java.util.Scanner;
+class Q22 
+{
+	public static void main(String[] args) 
+	{
+		int n, temp;
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter number of elements you want : ");
+		n = s.nextInt();
+
+		int a[] = new int[10];
+
+		System.out.println("Enter all the elements:");
+		for (int i = 0; i < 10; i++) 
+		{
+			a[i] = s.nextInt();
+		}
+
+		
+		for (int i = 0; i < 10; i++) 
+		{
+			for (int j = i + 1; j < 10; j++) 
+			{
+				if (a[i] < a[j]) 
+				{
+					temp = a[i];
+					a[i] = a[j];
+					a[j] = temp;
+				}
+			}
+		}
+
+
+		System.out.println("Descending Order:");
+		for (int i = 0; i < n; i++) 
+		{
+			System.out.println(a[i]);
+		}
+	}
+}
