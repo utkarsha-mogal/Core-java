@@ -2,12 +2,15 @@ import java.util.*
    public class Q18{
    public static void main(string ar[])	
  {
-  Scanner x = new Scanner(system.in);
-  system.out.println("Enter the number");
- int n = x.next Int();
- int f = 0;
- for(int i=2 ; i < n/2 ; i++)
+  int i=2;
+	while(i<= num/2)
 {
- 	if(n % i == 0)
-       {
-	
+   	if(num % i == 0)
+  	 {
+	isPrime = false;
+	break;
+  	 }
+  	    i++;
+    }
+  }
+}
